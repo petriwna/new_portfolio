@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  border-bottom: 1px solid var(--theme-theme-stroke);
+  justify-content: space-between;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__logo {
+    border: none;
+  }
+
+  &__nav {
+    display: flex;
+  }
+}

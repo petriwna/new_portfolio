@@ -2,3 +2,9 @@
 
 @use 'utils/variables';
 @use 'utils/fonts';
+
+@use 'components/link';
+@use 'components/tab';
+
+@use 'latouts/container';
+@use 'latouts/navbar';

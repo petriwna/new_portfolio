@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "sass": "^1.86.3",
+    "cross-env": "^7.0.3",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@vitejs/plugin-react": "^4.4.1",
     "@vitejs/plugin-vue": "^5.2.3",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
     "vite": "^6.2.4",
+    "vite-plugin-svgr": "^4.3.0",
     "vite-plugin-vue-devtools": "^7.7.2"
   }
 }

@@ -9,13 +9,14 @@ html {
 }
 
 body {
-  color: var(--color-white);
-  font-family: Ubuntu, sans-serif;
+  color: var(--theme-heading-foreground);
+  font-family: var(--font-family);
   font-size: 16px;
+  padding: 70px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.1;
   margin: 0;
-  background-color: var(--color-primary-background);
+  background-color: var(--theme-theme-backdrop);
 }
 
 h1,
