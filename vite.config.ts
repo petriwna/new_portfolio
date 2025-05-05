@@ -30,25 +30,15 @@ export default defineConfig(({ mode }) => {
         output: {
           entryFileNames: 'js/[name].[hash].js',
           chunkFileNames: 'js/[name].[hash].js',
-          assetFileNames: (assetInfo) => {
-            const ext = assetInfo.name?.split('.').pop()?.toLowerCase()
-
-            if (!ext) return 'assets/[name].[hash][extname]'
-
-            if (/\.(woff2?|ttf|otf|eot)$/.test(ext)) {
+          assetFileNames: assetInfo => {
+            if (/\.(woff2?|ttf|otf|eot)$/.test(assetInfo.name ?? '')) {
               return 'fonts/[name].[hash][extname]'
             }
-
-            if (/\.(png|jpe?g|gif|svg|webp|avif)$/.test(ext)) {
+            if (/\.(png|jpe?g|gif|svg|webp)$/.test(assetInfo.name ?? '')) {
               return 'images/[name].[hash][extname]'
             }
-
-            if (/\.(mp4|webm|ogg|mp3|wav|flac|aac)$/.test(ext)) {
-              return 'media/[name].[hash][extname]'
-            }
-
             return 'assets/[name].[hash][extname]'
-          }
+          },
         }
       }
     }

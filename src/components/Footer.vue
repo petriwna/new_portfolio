@@ -1,3 +1,6 @@
+<script setup lang="ts">
+
+</script>
 <template>
   <div class="footer">
     <div class="footer__social">
@@ -8,7 +11,7 @@
         <li class="tab">
           <a class="footer__link link" target="_blank" href="https://www.linkedin.com/in/nataliia-sychevska/">
             <svg class="footer__icon" width="24" height="24">
-              <use href="../assets/images/icons.svg#icon-icon-linkedin"></use>
+              <use href="../../public/icons.svg#icon-icon-linkedin"></use>
             </svg>
           </a>
         </li>
@@ -18,11 +21,10 @@
       <a class="footer__link link" target="_blank" href="https://github.com/petriwna">
         @petriwna
         <svg class="footer__icon" width="24" height="24">
-          <use href="../assets/images/icons.svg#icon-icon-git"></use>
+          <use href="../../public/icons.svg#icon-icon-git"></use>
         </svg>
       </a>
     </div>
   </div>
 </template>
-<script setup lang="ts">
-</script>
+
