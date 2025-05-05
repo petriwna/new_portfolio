@@ -1,0 +1,76 @@
+@use '../utils/mixins' as mixins;
+
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+
+  &__hi {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 450;
+    color: var(--theme-foreground);
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 450;
+    color: var(--theme-heading-foreground);
+  }
+
+  &__subtitle {
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 140%;
+    color: var(--primitive-indigo-500);
+  }
+
+  &__comments {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--theme-foreground);
+  }
+
+  &__code {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primitive-indigo-500);
+
+    &--var {
+      color: var(--primitive-teal-400);
+    }
+
+    &--white {
+      color: var(--theme-heading-foreground);
+    }
+
+    &--link {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--theme-link-foreground);
+    }
+  }
+
+  &__game {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: -50px;
+    right: 10%;
+    background-image: url("@/assets/images/decor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+  }
+}

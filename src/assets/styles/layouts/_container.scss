@@ -1,6 +1,8 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1780px;
   border: 1px solid var(--theme-theme-stroke);
   border-radius: 8px;
   background: var(--theme-theme-background);

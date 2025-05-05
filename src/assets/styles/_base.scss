@@ -13,10 +13,11 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   padding: 70px;
-  font-weight: 300;
+  font-weight: 450;
   line-height: 1.1;
   margin: 0;
   background-color: var(--theme-theme-backdrop);
+  height: 100vh;
 }
 
 h1,
@@ -48,4 +49,8 @@ a {
 
 address {
   font-style: normal;
+}
+
+main {
+  height: 100%;
 }

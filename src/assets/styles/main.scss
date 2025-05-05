@@ -1,12 +1,15 @@
-@use 'base';
-
+@use 'utils/mixins';
 @use 'utils/variables';
 @use 'utils/fonts';
 
+@use 'base';
+
+@use 'components/game';
 @use 'components/link';
 @use 'components/tab';
 
-@use 'latouts/container';
-@use 'latouts/footer';
-@use 'latouts/hero';
-@use 'latouts/navbar';
+@use 'layouts/app';
+@use 'layouts/container';
+@use 'layouts/footer';
+@use 'layouts/hero';
+@use 'layouts/navbar';
