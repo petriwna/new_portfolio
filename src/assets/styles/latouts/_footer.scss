@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--theme-theme-stroke);
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: currentColor;
+    transition: fill 0.3s ease;
+  }
+}

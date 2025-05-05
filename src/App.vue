@@ -1,5 +1,8 @@
 <script setup>
 import Header from "@/components/Header.vue";
+import Hero from "@/components/Hero.vue";
+import Footer from "@/components/Footer.vue";
+
 </script>
 
 <template>
@@ -8,7 +11,10 @@ import Header from "@/components/Header.vue";
       <Header/>
     </header>
     <main>
+      <Hero />
     </main>
-    <footer></footer>
+    <footer>
+      <Footer/>
+    </footer>
   </div>
 </template>
