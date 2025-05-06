@@ -8,6 +8,7 @@ export default defineConfig(({mode}) => {
     const port = Number(env.VITE_PORT) || 5173
 
     return {
+        base: '/new_portfolio/',
         plugins: [vue()],
 
         resolve: {
