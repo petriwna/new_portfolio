@@ -49,7 +49,7 @@
     &--game {
       display: none;
 
-      @include tablet {
+      @include desktop {
         display: flex;
       }
     }
@@ -81,20 +81,26 @@
     align-items: center;
     display: none;
 
-    @include tablet {
+    @include desktop {
       display: flex;
     }
   }
 
   &__bg {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    top: -50px;
-    right: 10%;
+    top: -10px;
+    right: 0;
     background-image: url("@/assets/images/decor.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
+
+    @include desktop {
+      width: 50%;
+      top: -50px;
+      right: 10%;
+    }
   }
 }

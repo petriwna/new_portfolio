@@ -14,7 +14,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 import MobileMenu from './MobileMenu.vue'
 import Nav from "@/components/Nav.vue";
 
