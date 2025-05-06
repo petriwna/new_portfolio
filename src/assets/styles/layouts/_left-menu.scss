@@ -1,0 +1,25 @@
+.left-menu {
+  height: 100%;
+  border-right: 1px solid var(--theme-theme-stroke);
+  padding: 12px 24px 12px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__tab {
+    cursor: pointer;
+  }
+
+  &__icon {
+    transition: fill 0.3s ease;
+    fill: var(--primitive-slate-500);
+
+    &--active {
+      fill: var(--primitive-slate-300);
+    }
+
+    &:hover {
+      fill: var(--primitive-slate-300);
+    }
+  }
+}

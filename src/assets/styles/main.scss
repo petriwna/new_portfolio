@@ -8,10 +8,12 @@
 @use 'components/link';
 @use 'components/tab';
 
+@use 'layouts/about';
 @use 'layouts/app';
 @use 'layouts/container';
 @use 'layouts/footer';
 @use 'layouts/header';
 @use 'layouts/hero';
+@use 'layouts/left-menu';
 @use 'layouts/mobile-menu';
 @use 'layouts/navbar';
