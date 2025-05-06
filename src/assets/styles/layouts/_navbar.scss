@@ -1,7 +1,10 @@
+@use '../utils/mixins' as *;
+
 .navbar {
+  width: 100%;
   display: flex;
-  border-bottom: 1px solid var(--theme-theme-stroke);
   justify-content: space-between;
+  align-items: center;
 
   &__container {
     display: flex;
@@ -14,6 +17,37 @@
   }
 
   &__nav {
-    display: flex;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__contacts-tab {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    cursor: pointer;
+    margin: 16px;
+
+    @include tablet {
+       display: none;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    transition: fill 0.3s ease;
   }
 }

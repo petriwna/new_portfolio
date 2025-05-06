@@ -9,7 +9,7 @@
         </h2>
       </div>
       <div>
-        <p class="hero__comments">// complete the game to continue</p>
+        <p class="hero__comments hero__comments--game">// complete the game to continue</p>
         <p class="hero__comments">// find my profile on Github:</p>
         <p class="hero__code">const <span class="hero__code--var">githubLink</span> <span
             class="hero__code--white">=</span> <a class="hero__code--link" href="https://github.com/petriwna">“https://github.com/petriwna”</a>

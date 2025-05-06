@@ -9,7 +9,7 @@
       </div>
       <ul>
         <li class="tab">
-          <a class="footer__link link" target="_blank" href="https://www.linkedin.com/in/nataliia-sychevska/">
+          <a class="footer__link--linkedin link" target="_blank" href="https://www.linkedin.com/in/nataliia-sychevska/">
             <svg class="footer__icon" width="24" height="24">
               <use href="../../public/icons.svg#icon-icon-linkedin"></use>
             </svg>
@@ -20,6 +20,12 @@
     <div class="footer__git tab">
       <a class="footer__link link" target="_blank" href="https://github.com/petriwna">
         @petriwna
+        <svg class="footer__icon" width="24" height="24">
+          <use href="../../public/icons.svg#icon-icon-git"></use>
+        </svg>
+      </a>
+
+      <a class="footer__link--icon link" target="_blank" href="https://github.com/petriwna">
         <svg class="footer__icon" width="24" height="24">
           <use href="../../public/icons.svg#icon-icon-git"></use>
         </svg>

@@ -1,18 +1,30 @@
-@use '../utils/mixins' as mixins;
+@use '../utils/mixins' as *;
 
 .hero {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 50px;
   position: relative;
+
+  @include tablet {
+    flex-direction: row;
+  }
 
   &__hi {
     font-size: 18px;
     line-height: 150%;
     font-weight: 450;
     color: var(--theme-foreground);
+  }
+
+  &__text {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
   }
 
   &__title {
@@ -33,6 +45,14 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--theme-foreground);
+
+    &--game {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
   }
 
   &__code {
@@ -58,8 +78,12 @@
 
   &__game {
     height: 100%;
-    display: flex;
     align-items: center;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__bg {
