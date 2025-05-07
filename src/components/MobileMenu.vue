@@ -13,22 +13,16 @@
       <p class="mobile-menu__list-title"># navigate:</p>
       <ul class="mobile-menu__list">
         <li>
-          <a class="mobile-menu__link" href="#hello">
-            _hello
-          </a>
+          <RouterLink class="mobile-menu__link" to="/" @click="$emit('close')">_hello</RouterLink>
         </li>
         <li>
-          <a class="mobile-menu__link" href="#chefs-section">
-            _about-me
-          </a>
+          <RouterLink class="mobile-menu__link" to="/about" @click="$emit('close')">_about-me</RouterLink>
         </li>
         <li>
-          <a class="mobile-menu__link" href="#formats-section">_projects</a>
+          <RouterLink class="mobile-menu__link" to="/projects" @click="$emit('close')">_projects</RouterLink>
         </li>
         <li>
-          <a class="mobile-menu__link" href="#contact-section">
-            _contact-me
-          </a>
+          <RouterLink class="mobile-menu__link" to="/contacts" @click="$emit('close')">_contact-me</RouterLink>
         </li>
       </ul>
     </div>

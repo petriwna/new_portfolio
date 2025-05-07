@@ -1,7 +1,9 @@
 <script setup>
+import {RouterView} from 'vue-router'
+
 import Header from "@/components/Header.vue";
-import Hero from "@/components/Hero.vue";
-import About from "@/components/About.vue";
+import Hero from "@/views/HomeView.vue";
+import About from "@/views/AboutView.vue";
 import Footer from "@/components/Footer.vue";
 
 </script>
@@ -12,8 +14,9 @@ import Footer from "@/components/Footer.vue";
       <Header/>
     </header>
     <main>
-<!--      <Hero />-->
-      <About />
+      <!--      <Hero />-->
+      <!--      <About />-->
+      <RouterView/>
     </main>
     <footer>
       <Footer/>
