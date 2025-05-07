@@ -7,7 +7,7 @@
           :class="{ rotated: isOpen }"
           width="16" height="16"
       >
-        <use :href="`/icons.svg#icon-${item.icon_arrow}`"/>
+        <use :href="`${baseUrl}/icons.svg#icon-${item.icon_arrow}`"/>
       </svg>
       <div class="sidebar__link-text" @click="toggle"
            :class="{ 'sidebar__link-text--left': item.padding}">
@@ -15,7 +15,7 @@
              class="sidebar__icon" width="16" height="16"
              :style="{ fill: item.color ? `var(${item.color})` : 'currentColor' }"
         >
-          <use :href="`/icons.svg#icon-${item.icon}`"/>
+          <use :href="`${baseUrl}icons.svg#icon-${item.icon}`"/>
         </svg>
         <span class="sidebar__label"
               :class="{ 'sidebar__label--disabled': !item.children || item.children.length === 0 }"
@@ -34,6 +34,7 @@
 </template>
 
 <script setup>
+const baseUrl = import.meta.env.BASE_URL
 import {ref, computed} from 'vue'
 import SidebarItem from './SidebarItem.vue'
 
