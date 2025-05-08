@@ -1,0 +1,6 @@
+<template>
+  <div>
+    <h2>Bio</h2>
+    <p>This is some info about Bio...</p>
+  </div>
+</template>

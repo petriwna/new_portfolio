@@ -2,9 +2,7 @@
   <div class="header">
     <Nav/>
     <button ref="menuBtnOpen" class="navbar__burger tab link menu-btn-open" type="button" @click="toggleMenu">
-      <svg class="navbar__icon" width="24" height="24">
-        <use href="../../public/icons.svg#icon-icon-menu"></use>
-      </svg>
+      <Icon name="menu" className="navbar__icon"/>
     </button>
     <div ref="mobileMenu" class="mobile-menu" :class="{ 'is-open': isOpen }">
       <div class="container">
@@ -15,8 +13,11 @@
 </template>
 <script setup lang="ts">
 import {ref} from 'vue'
-import MobileMenu from './MobileMenu.vue'
-import Nav from "@/components/Nav.vue";
+import MobileMenu from '../../../app/layout/MobileMenu.vue'
+import Nav from "@/app/layout/Nav.vue";
+import Icon from "@/shared/ui/Icon.vue";
+
+const baseUrl = import.meta.env.BASE_URL
 
 const isOpen = ref(false)
 

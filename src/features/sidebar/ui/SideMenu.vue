@@ -6,13 +6,20 @@
           :key="index"
           :item="item"
           :index="index"
+          @select="$emit('select', $event)"
       />
     </nav>
   </aside>
 </template>
 
-<script setup>
-import SidebarItem from './SidebarItem.vue'
+<script setup lang="ts">
+import SidebarItem from '../../../entities/sidebarItem/ui/SidebarItem.vue'
+
+const emit = defineEmits(['select'])
+
+const emitSelected = (label: string) => {
+  emit('select', label)
+}
 
 const menu = [
   {

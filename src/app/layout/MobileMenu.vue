@@ -4,9 +4,7 @@
       <Nav/>
       <button ref="menuBtnOpen" class="mobile-menu__btn-close tab link menu-btn-open" type="button"
               @click="$emit('close')">
-        <svg class="mobile-menu__icon" width="24" height="24">
-          <use href="../../public/icons.svg#icon-close"></use>
-        </svg>
+        <Icon name="close" className="mobile-menu__icon"/>
       </button>
     </div>
     <div class="mobile-menu__content">
@@ -30,6 +28,9 @@
   <Footer/>
 </template>
 <script setup lang="ts">
-import Footer from "@/components/Footer.vue";
-import Nav from "@/components/Nav.vue";
+import Footer from "@/widgets/footer/ui/Footer.vue";
+import Nav from "@/app/layout/Nav.vue";
+import Icon from "@/shared/ui/Icon.vue";
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
