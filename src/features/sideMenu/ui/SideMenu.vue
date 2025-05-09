@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import SidebarItem from '../../../entities/sidebarItem/ui/SidebarItem.vue'
-import type {SidebarMenuItem} from '@/shared/config/sidebarMenuConfig';
+import type { SidebarMenuItem } from '@/shared/config/sidebarMenuConfig';
 
 defineProps<{
   menu: SidebarMenuItem[];

@@ -21,7 +21,7 @@
         <div class="game__display"></div>
       </div>
     </div>
-    <div class="hero__bg"></div>
+    <div class="hero__bg" />
   </div>
 </template>
 <script setup lang="ts">
