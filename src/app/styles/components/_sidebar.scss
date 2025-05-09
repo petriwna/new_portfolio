@@ -1,14 +1,30 @@
+@use '../utils/mixins' as *;
+
 .sidebar {
-  width: 245px;
-  border-right: 1px solid var(--theme-theme-stroke);
+  width: 100%;
+
+  @include tablet {
+    width: 245px;
+    border-right: 1px solid var(--theme-theme-stroke);
+  }
 
   &__menu {
     display: flex;
     flex-direction: column;
+    gap: 4px;
+
+    @include tablet {
+      gap: 0;
+    }
   }
 
   &__item {
     border-bottom: 1px solid var(--theme-theme-stroke);
+    background: var(--primitive-slate-700);
+
+    @include tablet {
+      background: transparent;
+    }
 
     &--open > .sidebar__sub-menu {
       display: block;
@@ -60,6 +76,7 @@
 
   &__sub-menu {
     display: none;
+    background: var(--theme-theme-background);
 
     .sidebar__item {
       border-bottom: none;

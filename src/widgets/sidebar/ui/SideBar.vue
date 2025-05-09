@@ -1,0 +1,19 @@
+<template>
+  <SideTab :selectedTab="selectedTab" @select="selectTab" />
+  <SideMenu :menu="menuItems" @select="handleSelect" />
+</template>
+<script setup lang="ts">
+import { useSidebar } from '../model/useSidebar';
+import SideTab from "@/features/sideTab/ui/SideTab.vue";
+import SideMenu from "@/features/sideMenu/ui/SideMenu.vue";
+
+const { selectedTab, menuItems, selectTab } = useSidebar();
+
+const emit = defineEmits<{
+  (e: 'select', label: string): void
+}>()
+
+const handleSelect = (label: string) => {
+  emit('select', label)
+}
+</script>

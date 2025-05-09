@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <div class="about__title">_about-me</div>
     <SideBar @select="handleSelect" />
     <div class="about__content">
       <component :is="currentComponent" v-if="currentComponent"/>
@@ -10,7 +11,7 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue'
 
-import SideBar from "@/features/sidebar/ui/SideBar.vue";
+import SideBar from "@/widgets/sidebar/ui/SideBar.vue";
 import Bio from "@/widgets/AboutSection/ui/Bio.vue";
 import Interests from "@/widgets/AboutSection/ui/Interests.vue";
 import Education from "@/widgets/AboutSection/ui/Education.vue";
