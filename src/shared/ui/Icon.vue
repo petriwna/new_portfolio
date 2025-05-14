@@ -2,7 +2,7 @@
 defineProps<{
   name: string
   className?: string
-  size?: number
+  size?: string
 }>()
 
 const baseUrl = import.meta.env.BASE_URL

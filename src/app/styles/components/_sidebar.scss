@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    text-wrap: nowrap;
 
     &--left {
       padding-left: 28px;

@@ -2,7 +2,7 @@
   <div>
     <div class="header">
       <Nav/>
-      <button ref="menuBtnOpen" class="mobile-menu__btn-close tab link menu-btn-open" type="button"
+      <button ref="menuBtnOpen" class="mobile-menu__btn-close nav-item link menu-btn-open" type="button"
               @click="$emit('close')">
         <Icon name="close" className="mobile-menu__icon"/>
       </button>

@@ -18,4 +18,42 @@
       display: none;
     }
   }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__tab-container {
+    display: flex;
+  }
+
+  &__content {
+    border-top: 1px solid var(--theme-theme-stroke);
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    position: relative;
+
+    // Кастомний скрол
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+  }
 }

@@ -7,7 +7,7 @@ import { socialLinks } from '@/widgets/footer/model/socialLinks'
 <template>
   <div class="footer">
     <div class="footer__social">
-      <div class="tab">
+      <div class="nav-item">
         <p>find me in:</p>
       </div>
       <ul>
@@ -22,7 +22,7 @@ import { socialLinks } from '@/widgets/footer/model/socialLinks'
       </ul>
     </div>
     <div class="footer__git">
-      <a class="footer__link tab link" target="_blank" href="https://github.com/petriwna">
+      <a class="footer__link nav-item link" target="_blank" href="https://github.com/petriwna">
         @petriwna
         <Icon name="git" className="footer__icon" />
       </a>

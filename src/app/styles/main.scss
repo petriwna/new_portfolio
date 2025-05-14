@@ -6,13 +6,16 @@
 
 @use 'components/game';
 @use 'components/link';
+@use 'components/scroll';
 @use 'components/sidebar';
 @use 'components/tab';
+@use 'components/nav-item';
 
 @use 'layouts/about';
 @use 'layouts/app';
 @use 'layouts/container';
 @use 'layouts/footer';
+@use 'layouts/gist';
 @use 'layouts/header';
 @use 'layouts/hero';
 @use 'layouts/left-menu';

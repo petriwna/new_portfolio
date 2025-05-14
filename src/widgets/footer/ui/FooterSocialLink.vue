@@ -13,7 +13,7 @@ defineProps<{
   <a
       :href="href"
       target="_blank"
-      :class="['link', className, 'tab']"
+      :class="['link', className, 'nav-item']"
       :aria-label="label"
   >
     <Icon :name="icon" className="footer__icon" />

@@ -1,14 +1,14 @@
 <template>
   <nav class="navbar">
     <div class="navbar__container">
-      <RouterLink class="navbar__logo tab link" to="/">nataliia-sychevska</RouterLink>
+      <RouterLink class="navbar__logo nav-item link" to="/">nataliia-sychevska</RouterLink>
       <div class="navbar__items">
         <div class="navbar__nav">
           <RouterLink
               v-for="link in linksWithoutContacts"
               :key="link.to"
-              class="tab link"
-              :class="{ 'tab--active': route.path === link.to }"
+              class="nav-item link"
+              :class="{ 'nav-item--active': route.path === link.to }"
               :to="link.to"
           >
             {{ link.label }}
@@ -18,7 +18,7 @@
     </div>
     <div class="navbar__contacts-tab">
       <RouterLink
-          class="tab link"
+          class="nav-item link"
           :class="{ 'tab--active': route.path === contactLink.to }"
           :to="contactLink.to"
       >

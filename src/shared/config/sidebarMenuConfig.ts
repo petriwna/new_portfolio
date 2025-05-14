@@ -1,5 +1,6 @@
 export type SidebarMenuItem = {
     label: string;
+    isTab?: boolean;
     icon?: string;
     icon_arrow?: string;
     color?: string;
@@ -18,6 +19,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                 {
                     label: 'bio',
                     icon: 'folder',
+                    isTab: true,
                     color: '--primitive-rose-400',
                     icon_arrow: 'arrow-s',
                     children: [
@@ -28,6 +30,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                 {
                     label: 'interests',
                     icon: 'folder',
+                    isTab: true,
                     icon_arrow: 'arrow-s',
                     color: '--primitive-teal-400',
                     children: [
@@ -38,6 +41,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                 {
                     label: 'education',
                     icon: 'folder',
+                    isTab: true,
                     icon_arrow: 'arrow-s',
                     color: '--primitive-indigo-500',
                     children: [
@@ -64,6 +68,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                 {
                     label: 'bio',
                     icon: 'folder',
+                    isTab: true,
                     color: '--primitive-rose-400',
                     icon_arrow: 'arrow-s',
                     children: [
@@ -74,6 +79,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                 {
                     label: 'interests',
                     icon: 'folder',
+                    isTab: true,
                     icon_arrow: 'arrow-s',
                     color: '--primitive-teal-400',
                     children: [
@@ -85,6 +91,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
                     label: 'education',
                     icon: 'folder',
                     icon_arrow: 'arrow-s',
+                    isTab: true,
                     color: '--primitive-indigo-500',
                     children: [
                         {label: 'high-school', icon: 'file', color: '--primitive-slate-500', padding: 'yes'},
@@ -113,7 +120,7 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
         {
             label: 'hobbies',
             icon_arrow: 'arrow',
-            children: [/* ... */]
+            isTab: true,
         },
     ]
 };

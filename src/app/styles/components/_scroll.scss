@@ -1,0 +1,16 @@
+@use '../utils/mixins' as *;
+
+.scroll {
+  display: none;
+  border-left: 1px solid var(--theme-theme-stroke);
+  border-right: 1px solid var(--theme-theme-stroke);
+  width: 40px;
+
+  @include tablet {
+    display: block;
+  }
+
+  &__icon {
+    fill: var(--primitive-slate-500);
+  }
+}

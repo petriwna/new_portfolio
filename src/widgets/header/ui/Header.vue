@@ -3,7 +3,7 @@
     <Nav/>
     <button
         ref="menuBtnOpen"
-        class="navbar__burger tab link menu-btn-open"
+        class="navbar__burger nav-item link menu-btn-open"
         type="button"
         @click="toggleMenu"
     >
