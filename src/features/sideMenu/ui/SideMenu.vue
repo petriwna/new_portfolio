@@ -3,7 +3,7 @@
     <nav class="sidebar__menu">
       <SidebarItem
           v-for="(item, index) in menu"
-          :key="item.label + selectedTab"
+          :key="item.label + '-' + index"
           :item="item"
           :index="index"
           @select="$emit('select', $event)"
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import SidebarItem from '../../../entities/sidebarItem/ui/SidebarItem.vue'
+import SidebarItem from '@/entities/sidebarItem/ui/SidebarItem.vue';
 import type { SidebarMenuItem } from '@/shared/config/sidebarMenuConfig';
 
 defineProps<{

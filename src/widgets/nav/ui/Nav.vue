@@ -19,7 +19,7 @@
     <div class="navbar__contacts-tab">
       <RouterLink
           class="nav-item link"
-          :class="{ 'tab--active': route.path === contactLink.to }"
+          :class="{ 'nav-item--active': route.path === contactLink.to }"
           :to="contactLink.to"
       >
         {{ contactLink.label }}

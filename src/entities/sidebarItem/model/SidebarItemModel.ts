@@ -1,6 +1,8 @@
 import {SidebarItem} from "@/entities/sidebarItem/types/SidebarItem";
 
 export class SidebarItemModel {
+    private baseUrl: string;
+
     constructor(private item: SidebarItem) {
         this.baseUrl = import.meta.env.BASE_URL
     }

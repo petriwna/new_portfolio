@@ -8,7 +8,7 @@ export type SidebarMenuItem = {
     children?: SidebarMenuItem[];
 };
 
-export const sidebarMenuTabs = ['profession', 'personal', 'hobbies'] as const;
+export const sidebarMenuTabs = ['profession', 'personal', 'hobbies', 'projects', 'contacts'] as const;
 
 export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
     profession: [
@@ -121,6 +121,26 @@ export const sidebarMenuConfig: Record<string, SidebarMenuItem[]> = {
             label: 'hobbies',
             icon_arrow: 'arrow',
             isTab: true,
+        },
+    ],
+    contacts: [
+        {
+            label: 'contacts',
+            icon_arrow: 'arrow',
+            children: [
+                { label: 'user@gmail.com', icon: 'message', color: '--primitive-slate-500' },
+                { label: '+3598246359', icon: 'phone', color: '--primitive-slate-500' },
+            ],
+        },
+        {
+            label: 'find-me-also-in',
+            icon_arrow: 'arrow',
+            children: [
+                { label: 'YouTube', icon: 'youtube' },
+                { label: 'dev.to', icon: 'devto' },
+                { label: 'Instagram', icon: 'instagram' },
+                { label: 'Twitch', icon: 'twitch' },
+            ],
         },
     ]
 };

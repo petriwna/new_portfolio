@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
 import HomeView from "@/pages/home/ui/HomeView.vue";
 import AboutView from "@/pages/about/ui/AboutView.vue";
+import ContactView from "@/pages/contact/ui/ContactView.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -18,11 +19,11 @@ const routes: RouteRecordRaw[] = [
     //     name: 'Projects',
     //     component: () => import('@/pages/ProjectsView.vue'),
     // },
-    // {
-    //     path: '/contacts',
-    //     name: 'Contacts',
-    //     component: () => import('@/pages/ContactsView.vue'),
-    // },
+    {
+        path: '/contacts',
+        name: '_contact-me',
+        component: () => ContactView,
+    },
 ]
 
 const router = createRouter({
